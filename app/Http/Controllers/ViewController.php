@@ -29,4 +29,16 @@ class ViewController extends Controller
         //return view('my_laravel')->with($data);
         return view('my_laravel', compact('data', 'title'));
     }
+
+    public function view(){
+        return view('index');
+    }
+
+    public function article(){
+        return view('article');
+    }
+
+    public function layouts(){
+        return view('layouts');
+    }
 }
