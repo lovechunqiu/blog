@@ -11,15 +11,21 @@
 |
 */
 
+Route::get('/', 'IndexController@index');
+
+
+/**
 Route::get('/', function () {
      return view('welcome');
 });
+ */
 
 //Route::get('view', 'ViewController@index');
+/**
 Route::get('view', 'ViewController@view');
 Route::get('article', 'ViewController@article');
 Route::get('layouts', 'ViewController@layouts');
-
+ */
 /**
 Route::get('/view', function(){
     return view('my_laravel');
