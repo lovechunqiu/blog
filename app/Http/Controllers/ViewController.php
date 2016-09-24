@@ -31,6 +31,8 @@ class ViewController extends Controller
     }
 
     public function view(){
+        //读取配置文件，config
+        echo config('database.connections.mysql.prefix');
         return view('index');
     }
 
